@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { baseUrl } from "../Urls";
 
 export default function Signup() {
   const [credentials, setcredentials] = useState({
@@ -19,7 +20,7 @@ export default function Signup() {
         location: credentials.geolocation,
       })
     );
-    const response = await fetch("http://localhost:5000/api/creatuser", {
+    const response = await fetch(`${baseUrl}/api/creatuser`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
