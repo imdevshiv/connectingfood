@@ -8,7 +8,7 @@ const { getFoodCategory } = require("./models/GetFoodCategory");
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "*",
   })
 );
 
