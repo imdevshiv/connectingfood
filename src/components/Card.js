@@ -44,7 +44,7 @@ export default function Card(props) {
           />
           <div className="card-body">
             <h5 className="card-title">{props.foodItem.name}</h5>
-            <p className="card-text">{props.foodItem.description}</p>
+            <p className="card-text fst-italic">{props.foodItem.description}</p>
             <div className="container w-100">
               <select
                 className="m-2 h-100  bg-warning rounded"
