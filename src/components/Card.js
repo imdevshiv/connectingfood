@@ -42,12 +42,12 @@ export default function Card(props) {
             style={{ height: "200px", objectFit: "fill" }}
             alt="..."
           />
-          <div className="card-body">
+          <div className="card-body ">
             <h5 className="card-title">{props.foodItem.name}</h5>
-            <p className="card-text fst-italic">{props.foodItem.description}</p>
+            {/* <p className="card-text lead ">{props.foodItem.description}</p> */}
             <div className="container w-100">
               <select
-                className="m-2 h-100  bg-warning rounded"
+                className="m-2 h-100 bg-warning rounded"
                 onChange={(e) => setQty(e.target.value)}
               >
                 {Array.from(Array(6), (e, i) => {
@@ -72,7 +72,7 @@ export default function Card(props) {
                   );
                 })}
               </select>
-              <div className="d-inline h-100  ">Rs{finalPrice}/-</div>
+              <div className="m-2 h-100  ">Rs{finalPrice}/-</div>
             </div>
             <hr></hr>
             <button
